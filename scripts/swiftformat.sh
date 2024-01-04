@@ -8,7 +8,8 @@ if which swiftformat > /dev/null; then
     for file in $(git diff --name-only --cached)
     do
         # check if file is in correct location to apply swiftformatting
-        if [[ "$file" == *"TuistWorkspace/Targets"* ]]; then
+        if [[ "$file" == *"TuistWorkspace/Targets"* ]] && \
+        [[ "$file" == *".swift" ]]; then
             swiftformat $file
             # Now add the file back to the staging section to be committed.
             # Uncomment if we need users to review changes before adding them
