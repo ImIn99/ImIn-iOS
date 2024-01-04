@@ -1,11 +1,19 @@
 import SwiftUI
 
 public struct ContentView: View {
+    @State
+    var actual: Int = 1
     public init() {}
 
     public var body: some View {
         Text("Hello, World!")
             .padding()
+    }
+    
+    public func doThing() -> Int {
+        actual = 1
+        var s :Int = 2
+        return s
     }
 }
 
