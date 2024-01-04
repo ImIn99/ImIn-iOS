@@ -11,7 +11,7 @@ public struct ContentView: View {
     }
     
     public func doThing() -> Int {
-        actual = 1
+        self.actual = 1
         var s :Int = 2
         return s
     }
