@@ -1,9 +1,10 @@
 # format options
---allman true
---indent tab # tabs FTW!
+#--allman true
+#--indent tab # tabs FTW!
 
 # file options
 --exclude Tuist, Plugins, Derived
 
 # rules
---disable elseOnSameLine,semicolons
+--disable all
+--enable redundantSelf
